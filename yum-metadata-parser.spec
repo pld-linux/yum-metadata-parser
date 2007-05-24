@@ -12,7 +12,7 @@ BuildRequires:	rpmbuild(macros) >= 1.228
 Requires(post,preun):	/sbin/chkconfig
 Requires:	python >= 2.5
 Requires:	python-libxml2
-Requires:	python-sqlite
+Requires:	python-sqlite1
 Requires:	rc-scripts
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
