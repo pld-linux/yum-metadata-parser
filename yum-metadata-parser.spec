@@ -14,6 +14,7 @@ Requires:	python >= 2.5
 Requires:	python-libxml2
 Requires:	python-sqlite1
 Requires:	rc-scripts
+Requires:	yum
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
