@@ -1,4 +1,5 @@
 Summary:	A fast metadata parser for yum
+Summary(pl.UTF-8):	Szybki analizator metadanych dla yuma
 Name:		yum-metadata-parser
 Version:	1.1.1
 Release:	1
@@ -10,7 +11,7 @@ URL:		http://linux.duke.edu/projects/yum/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.228
 Requires(post,preun):	/sbin/chkconfig
-Requires:	python >= 2.5
+Requires:	python >= 1:2.5
 Requires:	python-libxml2
 Requires:	python-sqlite1
 Requires:	rc-scripts
@@ -19,6 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Fast metadata parser for yum implemented in C.
+
+%description -l pl.UTF-8
+Szybki analizator metadanych dla yuma zaimplementowany w C.
 
 %prep
 %setup -q
@@ -29,7 +33,7 @@ python setup.py build
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install -O1 --root=%{buildroot}
+python setup.py install -O1 --root=$RPM_BUILD_ROOT
 
 %py_postclean
 
