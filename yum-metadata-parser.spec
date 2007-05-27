@@ -10,6 +10,7 @@ Source0:	http://linux.duke.edu/projects/yum/download/yum-metadata-parser/%{name}
 URL:		http://linux.duke.edu/projects/yum/
 BuildRequires:	glib2-devel
 BuildRequires:	libxml2-devel
+BuildRequires:	pkgconfig
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpmbuild(macros) >= 1.228
 BuildRequires:	rpm-pythonprov
