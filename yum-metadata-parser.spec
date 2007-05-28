@@ -11,7 +11,7 @@ URL:		http://linux.duke.edu/projects/yum/
 BuildRequires:	glib2-devel
 BuildRequires:	libxml2-devel
 BuildRequires:	pkgconfig
-BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	python-devel
 BuildRequires:	rpmbuild(macros) >= 1.228
 BuildRequires:	rpm-pythonprov
 BuildRequires:	sqlite3-devel
@@ -33,7 +33,6 @@ python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 python setup.py install -O1 --root=$RPM_BUILD_ROOT
 
 %py_postclean
@@ -45,5 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README AUTHORS ChangeLog
 %{py_sitedir}/*.py*
-%{py_sitedir}/*.egg-info
 %attr(755,root,root) %{py_sitedir}/*.so
