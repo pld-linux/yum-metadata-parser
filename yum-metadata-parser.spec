@@ -2,7 +2,7 @@ Summary:	A fast metadata parser for yum
 Summary(pl.UTF-8):	Szybki analizator metadanych dla yuma
 Name:		yum-metadata-parser
 Version:	1.1.1
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications/System
 Source0:	http://linux.duke.edu/projects/yum/download/yum-metadata-parser/%{name}-%{version}.tar.gz
@@ -16,7 +16,7 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.228
 BuildRequires:	sqlite3-devel
 Requires:	python
-Requires:	python-sqlite
+Requires:	python-sqlite1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
