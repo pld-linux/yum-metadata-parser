@@ -2,7 +2,7 @@ Summary:	A fast metadata parser for yum
 Summary(pl.UTF-8):	Szybki analizator metadanych dla yuma
 Name:		yum-metadata-parser
 Version:	1.1.4
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/System
 Source0:	http://yum.baseurl.org/download/yum-metadata-parser/%{name}-%{version}.tar.gz
